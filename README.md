@@ -1,54 +1,54 @@
-# Duck Hunt VR (Hand-Tracking)
+# Duck Hunt VR (Seguimiento de Manos)
 
-A modern, web-based adaptation of the classic Duck Hunt game, featuring real-time webcam hand-tracking for a truly immersive, controller-free arcade experience.
+Una adaptación web moderna del clásico juego Duck Hunt, con seguimiento de manos en tiempo real usando la cámara web para una experiencia arcade inmersiva sin necesidad de controles.
 
-## 🎮 Features
+## 🎮 Características
 
-- **Real-Time Hand Tracking**: Uses your webcam to track your hand movements using MediaPipe.
-- **Index-Finger Aiming**: Move your index finger to control the crosshair precision and fluidity on the screen.
-- **Thumb-Based Shooting**: Perform a responsive thumb movement to trigger the shooting mechanic.
-- **Structured Progression**: A three-level system that requires specific hit counts to progress, balancing the game's difficulty.
-- **Retro Arcade Feel**: Responsive, classic Duck Hunt loop with a modern tracking twist.
+- **Seguimiento de Manos en Tiempo Real**: Utiliza tu cámara web para rastrear los movimientos de tus manos usando MediaPipe.
+- **Apuntado con el Dedo Índice**: Mueve tu dedo índice para controlar la precisión y fluidez de la mira en la pantalla.
+- **Disparo con el Pulgar**: Realiza un movimiento responsivo con el pulgar para activar la mecánica de disparo.
+- **Progresión Estructurada**: Un sistema de tres niveles que requiere una cantidad específica de aciertos para progresar, equilibrando la dificultad del juego.
+- **Sensación Arcade Retro**: El clásico ciclo de juego de Duck Hunt, ágil y responsivo, pero con un toque moderno de seguimiento.
 
-## 🛠️ Technology Stack
+## 🛠️ Tecnologías
 
-- **Frontend Build Tool**: [Vite](https://vitejs.dev/)
-- **Language**: TypeScript / JavaScript (Vanilla)
-- **Hand Tracking Engine**: [MediaPipe Tasks Vision](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker) (@mediapipe/tasks-vision)
+- **Herramienta de Construcción Frontend**: [Vite](https://vitejs.dev/)
+- **Lenguaje**: TypeScript / JavaScript (Vanilla)
+- **Motor de Seguimiento de Manos**: [MediaPipe Tasks Vision](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker) (@mediapipe/tasks-vision)
 
-## 🚀 Getting Started
+## 🚀 Cómo Empezar
 
-### Prerequisites
+### Requisitos Previos
 
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu computadora.
 
-### Installation
+### Instalación
 
-1. Clone the repository:
+1. Clona el repositorio:
    ```bash
    git clone https://github.com/PabloGGuizar/duck-hunt-vr.git
    ```
-2. Navigate to the project directory:
+2. Entra al directorio del proyecto:
    ```bash
    cd duck-hunt-vr
    ```
-3. Install the dependencies:
+3. Instala las dependencias:
    ```bash
    npm install
    ```
 
-### Running Locally
+### Ejecutar Localmente
 
-To start the development server, run:
+Para iniciar el servidor de desarrollo, ejecuta:
 
 ```bash
 npm run dev
 ```
 
-Open your browser and navigate to the URL provided in your terminal (usually `http://localhost:5173`). 
+Abre tu navegador y ve a la URL proporcionada en tu terminal (generalmente `http://localhost:5173`). 
 
-**Note**: You will need to grant your browser permission to access your webcam for the hand-tracking features to work.
+**Nota**: Necesitarás darle permiso a tu navegador para acceder a tu cámara web y así poder utilizar las funciones de seguimiento de manos.
 
-## 📜 License
+## 📜 Licencia
 
-This project is open-source. Feel free to contribute or modify it!
+Este proyecto es de código abierto. ¡Siéntete libre de contribuir o modificarlo!
