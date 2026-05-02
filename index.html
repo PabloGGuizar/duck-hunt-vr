@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck Hunt VR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/duck-hunt-vr/assets/index-CfL5a6rT.js"></script>
+    <link rel="stylesheet" crossorigin href="/duck-hunt-vr/assets/index-BvWqatCj.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- Fondo y escenario -->
+      <div id="sky"></div>
+      <div id="grass"></div>
+
+      <!-- UI del juego -->
+      <div id="ui-layer">
+        <div class="score-board">SCORE <span id="score">0</span></div>
+        <div class="ammo-board">SHOTS <span id="ammo">3</span></div>
+        <div class="level-board" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #000; color: #fff; padding: 10px; border: 4px solid #fff; font-size: 16px;">ROUND <span id="round-display">1</span></div>
+
+        <!-- Pantalla de Calibración -->
+        <div id="calibration-overlay" class="hidden">
+          <h2 id="calibration-title">CALIBRACIÓN</h2>
+          <p id="calibration-inst">Apunta al objetivo y dispara (baja el pulgar).</p>
+          <div id="calibration-target">
+            <div class="target-center"></div>
+          </div>
+        </div>
+
+        <div id="message-overlay">
+          <h1 id="main-message">DUCK HUNT VR</h1>
+          <p id="sub-message">Mano de pistola a la cámara.<br>Mueve rápido hacia arriba para disparar.</p>
+          <button id="start-btn">JUGAR</button>
+        </div>
+      </div>
+
+      <!-- Canvas para el juego (Patos) -->
+      <canvas id="game-canvas"></canvas>
+
+      <!-- Video para MediaPipe (visible pequeño para debugging) -->
+      <video id="webcam" autoplay playsinline muted style="position: absolute; bottom: 10px; right: 10px; width: 200px; border: 2px solid white; z-index: 100;"></video>
+
+      <!-- Elemento HTML para la mira (Crosshair) -->
+      <div id="crosshair" class="hidden">
+        <div class="crosshair-center"></div>
+      </div>
+      
+      <!-- Efecto de flash al disparar -->
+      <div id="flash-effect"></div>
+    </div>
+    
+  </body>
+</html>
